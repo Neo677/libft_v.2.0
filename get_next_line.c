@@ -1,10 +1,20 @@
-// header
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: thobenel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/12 16:49:16 by thobenel          #+#    #+#             */
+/*   Updated: 2024/12/12 16:49:22 by thobenel         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-void    create_list(t_gnl_list **list, int fd)
+void	create_list(t_gnl_list **list, int fd)
 {
-    int		read_char;
+	int		read_char;
 	char	*buf;
 
 	while (!found_nwl(*list))
@@ -66,9 +76,9 @@ void	poff_list(t_gnl_list **list)
 {
 	t_gnl_list	*lt_node;
 	t_gnl_list	*cl_node;
-	int		i;
-	int		j;
-	char	*buf;
+	int			i;
+	int			j;
+	char		*buf;
 
 	i = 0;
 	j = 0;
@@ -94,7 +104,7 @@ void	poff_list(t_gnl_list **list)
 char	*get_next_line(int fd)
 {
 	static t_gnl_list	*list;
-	char			*next_line;
+	char				*next_line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);

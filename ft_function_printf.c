@@ -31,11 +31,11 @@ void	ft_putstr_fd_two(char *s, int fd, int *count)
 {
 	if (!s)
 	{
-		ft_putstr_fd_two ("(null)", 1, count);
+		ft_putstr_fd_two("(null)", 1, count);
 		return ;
 	}
 	while (*s)
-		ft_putchar_fd_two (*s++, fd, count);
+		ft_putchar_fd_two(*s++, fd, count);
 }
 
 void	ft_putnbr_basefd_one(long long n, char *base, int fd, int *count)
@@ -44,7 +44,7 @@ void	ft_putnbr_basefd_one(long long n, char *base, int fd, int *count)
 
 	if (n < 0)
 	{
-		ft_putchar_fd_two ('-', fd, count);
+		ft_putchar_fd_two('-', fd, count);
 		n = n * -1;
 	}
 	len_base = ft_strlent(base);
@@ -58,11 +58,6 @@ void	ft_putnbr_basefd_two(unsigned long long n, char *base, int fd,
 {
 	unsigned long long	base_len;
 
-	// if (n < 0)
-	// {
-	// 	ft_putchar_fd_two('-', fd, count);
-	// 	n = n * -1;
-	// }
 	base_len = ft_strlent(base);
 	if (n >= base_len)
 		ft_putnbr_basefd_two(n / base_len, base, fd, count);
