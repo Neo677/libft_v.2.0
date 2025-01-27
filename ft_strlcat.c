@@ -19,7 +19,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	if (dstsize == 0)
-		return (ft_strlen(src));
+		return (ft_strlen_v2(src));
 	while (dst[i] != '\0' && i < dstsize)
 		i++;
 	j = i;
@@ -30,7 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	if (j < dstsize)
 		dst[i] = '\0';
-	return (j + ft_strlen(src));
+	return (j + ft_strlen_v2(src));
 }
 
 // #include <string.h>

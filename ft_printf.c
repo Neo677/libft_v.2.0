@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static void	ft_p_adress(unsigned long long ad_laurent, int fd, int *count)
+static void	ft_p_adress_v2(unsigned long long ad_laurent, int fd, int *count)
 {
 	if (!ad_laurent)
 		return (ft_putstr_fd_two("(nil)", fd, count));
@@ -36,7 +36,7 @@ static void	ft_hdl_bro(const char **format, va_list arg, int fd, int *count)
 		else if (**format == 's')
 			ft_putstr_fd_two(va_arg(arg, char *), fd, count);
 		else if (**format == 'p')
-			ft_p_adress(va_arg(arg, unsigned long long), fd, count);
+			ft_p_adress_v2(va_arg(arg, unsigned long long), fd, count);
 		else if (**format == 'd' || **format == 'i')
 			ft_putnbr_basefd_one(va_arg(arg, int), "0123456789", fd, count);
 		else if (**format == 'u')

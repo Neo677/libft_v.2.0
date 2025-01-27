@@ -22,7 +22,7 @@ char	*ft_strnstr(const char *s, const char *to_find, size_t n)
 	i = 0;
 	while (s[i] && i < n)
 	{
-		if (s[i] == to_find[0] && ft_strlen(to_find) <= n - i)
+		if (s[i] == to_find[0] && ft_strlen_v2(to_find) <= n - i)
 		{
 			j = 0;
 			while (s[i + j] && to_find[j] && s[i + j] == to_find[j])
