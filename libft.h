@@ -27,13 +27,13 @@
 
 char					*ft_strrchr(const char *s, int c);
 char					*ft_strnstr(const char *s1, const char *s2, size_t n);
-size_t					ft_strlen(const char *str);
+size_t					ft_strlen_v2(const char *str);
 size_t					ft_strlcpy(char *dst, const char *src, size_t dst_size);
 size_t					ft_strlcat(char *dst, const char *src, size_t dstsize);
 int						ft_strncmp(const char *s1, const char *s2, size_t n);
-char					*ft_strdup(const char *src);
+char					*ft_strdup_v2(const char *src);
 char					*ft_strchr(const char *s, int c);
-char					*ft_strjoin(char const *s1, char const *s2);
+char					*ft_strjoin_v2(char const *s1, char const *s2);
 char					*ft_strtrim(char const *s1, char const *set);
 void					*ft_memset(void *b, int c, size_t len);
 void					*ft_memmove(void *dst, const void *src, size_t len);
