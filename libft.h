@@ -25,8 +25,6 @@
 # include <string.h>
 # include <unistd.h>
 
-# include "../Exec/libft/printf/ft_printf.h"
-
 char					*ft_strrchr(const char *s, int c);
 char					*ft_strnstr(const char *s1, const char *s2, size_t n);
 size_t					ft_strlen_v2(const char *str);
