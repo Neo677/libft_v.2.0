@@ -54,7 +54,7 @@ Et ajoute libft.a à votre compilation :
 
 gcc main.c -L. -lft
 
-
+🤓  N'oubliez pas de make -s
 
 ⸻
 
